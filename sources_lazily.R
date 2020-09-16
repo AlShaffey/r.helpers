@@ -13,6 +13,9 @@ sources_lazily <- function(file_name){
     length_sourced_file <- length(sourced_file_name)
     if (length_sourced_file <= 0) {
       .GlobalEnv$m.2_sourced <- rbind(.GlobalEnv$m.2_sourced, file_name)
+    }else{
+      return()
     }
   }
+  source(file_name)
 }
