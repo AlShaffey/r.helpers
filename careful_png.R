@@ -9,3 +9,4 @@ careful_png <- function(png, plotting)
   png
   tryCatch(plotting, finally = dev.off())
 }
+
